@@ -4,8 +4,9 @@
   "description": "AIBizhive branding + theme skin for DeepSeek Harness (DSH) as a client UI plugin.",
   "license": "MIT",
   "private": true,
-  "main": "lib/client.js",
+  "main": "lib/host.js",
   "files": [
+    "lib/host.js",
     "lib/client.js",
     "README.md"
   ],
