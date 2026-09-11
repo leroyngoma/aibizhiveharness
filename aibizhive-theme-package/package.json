@@ -1,6 +1,6 @@
 {
   "name": "@aibizhive/dsh-client-ui-aibizhive-theme",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "AIBizhive branding + theme skin for DeepSeek Harness (DSH) as a client UI plugin.",
   "license": "MIT",
   "private": true,

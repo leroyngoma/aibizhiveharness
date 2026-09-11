@@ -1,0 +1,28 @@
+{
+  "name": "@aibizhive/dsh-client-ui-aibizhive-fullskin",
+  "version": "0.1.1",
+  "private": true,
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "client.js",
+    "package.json"
+  ],
+  "dsh": {
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-slots",
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-renderer"
+      ],
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}

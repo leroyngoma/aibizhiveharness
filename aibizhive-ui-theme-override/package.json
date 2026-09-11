@@ -1,0 +1,39 @@
+{
+  "name": "@deepseek-ai/dsh-client-ui-theme",
+  "version": "0.1.2-rc.1-aibizhive.2",
+  "description": "AIBizhive override of DSH client ui theme package (preserves upstream theme service; appends CSS/title/favicon enforcement).",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-connection",
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-renderer",
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-api-remotes"
+      ],
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "license": "MIT",
+  "private": true,
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "README.md"
+  ],
+  "dependencies": {
+    "@deepseek-ai/schemastery": "^3.18.2"
+  }
+}

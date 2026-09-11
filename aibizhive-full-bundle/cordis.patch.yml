@@ -1,0 +1,19 @@
+# AIBizhive full bundle patch (v0.1.1)
+#
+# This bundle:
+# - serves /brand/aibizhive-icon.png and overrides /manifest.webmanifest (host plugin)
+# - overrides the EXISTING client modules by id:
+#   ui-theme, ui-brand-official, ui-conversation
+
+- id: ui-theme
+  name: '@aibizhive/dsh-client-ui-theme-aibizhive'
+
+- id: ui-brand-official
+  name: '@aibizhive/dsh-client-ui-brand-official-aibizhive'
+
+- id: ui-conversation
+  name: '@aibizhive/dsh-client-ui-conversation-aibizhive'
+
+- insert:
+    - id: aibizhive-full-host
+      name: '@aibizhive/dsh-web-app-aibizhive-full'

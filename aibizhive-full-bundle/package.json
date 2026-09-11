@@ -1,0 +1,31 @@
+{
+  "name": "@aibizhive/dsh-web-app-aibizhive-full",
+  "version": "0.1.1",
+  "description": "AIBizhive full web bundle for DSH: brand icon + manifest + theme/brand/conversation client overrides + title enforcement.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "cordis.patch.yml",
+    "assets/brand/aibizhive-icon.png",
+    "vendor-packages/**",
+    "README.md"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@deepseek-ai/dsh-host-webserver": "^0.1.2-rc.1"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

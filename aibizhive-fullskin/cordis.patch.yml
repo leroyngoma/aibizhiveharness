@@ -1,0 +1,10 @@
+# AIBizhive fullskin bundle patch
+# Adds one safe client module (does not override @deepseek-ai packages).
+# Adds host plugin (this package) to serve /brand/aibizhive-icon.png and /manifest.webmanifest.
+
+- insert:
+    - id: aibizhive-fullskin-host
+      name: '@aibizhive/dsh-web-app-aibizhive-fullskin'
+
+    - id: aibizhive-fullskin-client
+      name: '@aibizhive/dsh-client-ui-aibizhive-fullskin'

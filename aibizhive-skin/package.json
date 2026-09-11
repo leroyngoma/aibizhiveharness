@@ -1,0 +1,32 @@
+{
+  "name": "@aibizhive/dsh-client-ui-aibizhive-skin",
+  "version": "0.1.3",
+  "description": "AIBizhive UI skin for DSH (CSS + title/favicon enforcement) as a client module.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": {
+      "default": "./index.js"
+    },
+    "./client": {
+      "default": "./client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "client": {
+      "inject": [],
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "license": "MIT",
+  "private": true,
+  "files": [
+    "index.js",
+    "client.js",
+    "lib/index.js",
+    "lib/client.js",
+    "README.md"
+  ]
+}

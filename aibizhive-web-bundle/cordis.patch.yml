@@ -1,0 +1,6 @@
+# AIBizhive web bundle patch
+# Inserts the AIBizhive skin client module into the composed plugin list.
+
+- insert:
+    - id: aibizhive-skin
+      name: '@aibizhive/dsh-client-ui-aibizhive-skin'

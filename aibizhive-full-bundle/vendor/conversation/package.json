@@ -1,0 +1,26 @@
+{
+  "name": "@aibizhive/dsh-client-ui-conversation-aibizhive",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "client.js",
+  "exports": {
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    ".": "./client.js"
+  },
+  "dsh": {
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-slots",
+        "@deepseek-ai/dsh-client-runtime/client",
+        "@deepseek-ai/cordis",
+        "react",
+        "react/jsx-runtime",
+        "@deepseek-ai/dsh-client-ui-primitives"
+      ],
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}

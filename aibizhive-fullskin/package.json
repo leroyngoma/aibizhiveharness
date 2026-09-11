@@ -1,0 +1,32 @@
+{
+  "name": "@aibizhive/dsh-web-app-aibizhive-fullskin",
+  "version": "0.1.2",
+  "description": "AIBizhive fullskin web bundle for DSH: serves icon+manifest; injects theme+brand+hero+title via a safe client module.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "cordis.patch.yml",
+    "assets/brand/aibizhive-icon.png",
+    "vendor/*.tgz",
+    "README.md"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@deepseek-ai/dsh-host-webserver": "^0.1.2-rc.1",
+    "@aibizhive/dsh-client-ui-aibizhive-fullskin": "file:./vendor/aibizhive-dsh-client-ui-aibizhive-fullskin-0.1.1.tgz"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "@deepseek-ai/dsh-client-ui-theme",
+  "version": "0.1.2-rc.1-aibizhive.1",
+  "private": true,
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    ".": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "package.json"
+  ],
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  }
+}

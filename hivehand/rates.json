@@ -1,0 +1,15 @@
+{
+  "currency": "ZAR",
+  "assumptions": {
+    "workday_hours": 8,
+    "contingency_percent": 15,
+    "company_markup_percent": 20,
+    "vat_percent": null
+  },
+  "roles": {
+    "phemi_vision": { "hourly_rate": null, "daily_rate": null },
+    "sima_method": { "hourly_rate": null, "daily_rate": null },
+    "leroy_build": { "hourly_rate": null, "daily_rate": null }
+  },
+  "notes": "Fill in rates (hourly or daily). If both are set, hourly_rate wins. Keep null to force the agent to leave TODO placeholders."
+}

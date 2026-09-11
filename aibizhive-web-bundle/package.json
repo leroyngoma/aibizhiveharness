@@ -1,0 +1,30 @@
+{
+  "name": "@aibizhive/dsh-web-app-aibizhive",
+  "version": "0.1.1",
+  "description": "AIBizhive web bundle patch for DSH: adds AIBizhive skin client module.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "cordis.patch.yml",
+    "README.md",
+    "vendor/*.tgz"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@aibizhive/dsh-client-ui-aibizhive-skin": "file:./vendor/aibizhive-dsh-client-ui-aibizhive-skin-0.1.3.tgz"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

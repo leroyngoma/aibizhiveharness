@@ -1,0 +1,25 @@
+{
+  "name": "@aibizhive/dsh-client-ui-theme-aibizhive",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "client.js",
+  "exports": {
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    ".": "./client.js"
+  },
+  "dsh": {
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-connection",
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-renderer",
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-api-remotes"
+      ],
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}

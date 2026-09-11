@@ -1,0 +1,12 @@
+{
+  "name": "@deepseek-ai/dsh-client-ui-theme",
+  "version": "0.1.2-aibizhive.1",
+  "description": "AIBizhive override of DSH client ui theme package.",
+  "license": "MIT",
+  "private": true,
+  "main": "lib/client.js",
+  "files": [
+    "lib/client.js",
+    "README.md"
+  ]
+}
